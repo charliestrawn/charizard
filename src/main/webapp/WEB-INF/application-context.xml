@@ -14,6 +14,7 @@
     <context:component-scan base-package="com.heroku.charizard"/>
     <mvc:annotation-driven/>
     <import resource="spring-security.xml"/>
+    <import resource="spring-data.xml"/>
     <mvc:resources mapping="/resources/**" location="/resources/" />
 
     <bean id="viewResolver" class="org.springframework.web.servlet.view.InternalResourceViewResolver">
