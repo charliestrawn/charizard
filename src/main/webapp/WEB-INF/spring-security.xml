@@ -6,17 +6,19 @@
                     http://www.springframework.org/schema/security
                     http://www.springframework.org/schema/security/spring-security-3.1.xsd">
 
-    <http use-expressions="true">
-        <intercept-url pattern="/**" access="permitAll" />
-        <form-login login-page="/WEB-INF/views/login.html" default-target-url="/"/>
-        <logout logout-success-url="/logout" />
-        <logout />
+    <http pattern="/resources/**" security="none" />
+    <http pattern="/login" security="none"/>
+
+    <http auto-config="true" use-expressions="true">
+        <intercept-url pattern="/**" access="hasAuthority('ROLE_USER')" />
+        <form-login login-page="/login" default-target-url="/"/>
+        <logout logout-success-url="/login" />
     </http>
 
     <authentication-manager>
         <authentication-provider>
             <user-service>
-                <user name="charlie" password="charlie" authorities="user, admin" />
+                <user name="charlie" password="charlie" authorities="ROLE_USER" />
             </user-service>
         </authentication-provider>
     </authentication-manager>

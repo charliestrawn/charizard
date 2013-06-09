@@ -2,21 +2,21 @@
 <html>
 <head>
     <title>Some Web App</title>
-    <link href="/css/bootstrap.css" rel="stylesheet">
-    <link href="/css/login.css" rel="stylesheet">
-    <link href="/css/bootstrap-responsive.css" rel="stylesheet">
+    <link type="text/css" href="/resources/css/bootstrap.css" rel="stylesheet">
+    <link type="text/css" href="/resources/css/login.css" rel="stylesheet">
+    <link type="text/css" href="/resources/css/bootstrap-responsive.css" rel="stylesheet">
 </head>
 <body>
     <div class="container">
 
-        <form class="form-signin">
+        <form class="form-signin" action="/j_spring_security_check" method="POST">
             <h2 class="form-signin-heading">Please sign in</h2>
-            <input type="text" class="input-block-level" placeholder="Email address">
-            <input type="password" class="input-block-level" placeholder="Password">
+            <input name="j_username" type="text" class="input-block-level" placeholder="Username">
+            <input name="j_password" type="password" class="input-block-level" placeholder="Password">
             <label class="checkbox">
                 <input type="checkbox" value="remember-me"> Remember me
             </label>
-            <button class="btn btn-large btn-primary" type="submit">Sign in</button>
+            <input name="submit" class="btn btn-large btn-primary" type="submit" value="Sign In"/>
         </form>
 
     </div>
