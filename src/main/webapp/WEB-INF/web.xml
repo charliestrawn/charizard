@@ -17,7 +17,12 @@
 
     <servlet-mapping>
         <servlet-name>mvc-dispatcher</servlet-name>
-        <url-pattern>/Charizard/*</url-pattern>
+        <url-pattern>/*</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>mvc-dispatcher</servlet-name>
+        <url-pattern>*.html</url-pattern>
     </servlet-mapping>
 
     <context-param>
@@ -32,7 +37,7 @@
 
     <filter-mapping>
         <filter-name>springSecurityFilterChain</filter-name>
-        <url-pattern>/Charizard/*</url-pattern>
+        <url-pattern>/*</url-pattern>
     </filter-mapping>
 
     <listener>
@@ -42,7 +47,7 @@
     </listener>
 
     <welcome-file-list>
-        <welcome-file>index.html</welcome-file>
+        <welcome-file>views/index.html</welcome-file>
     </welcome-file-list>
 
 </web-app>
