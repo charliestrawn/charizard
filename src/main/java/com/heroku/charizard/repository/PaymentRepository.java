@@ -15,4 +15,8 @@ public class PaymentRepository {
     public List<Payment> getAll() {
         return mongoTemplate.findAll(Payment.class);
     }
+
+    public void add(Payment payment) {
+        mongoTemplate.insert(payment);
+    }
 }

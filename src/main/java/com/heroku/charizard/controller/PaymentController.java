@@ -4,10 +4,13 @@ import com.heroku.charizard.domain.Payment;
 import com.heroku.charizard.service.PaymentService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import java.util.List;
+
+import static org.springframework.web.bind.annotation.RequestMethod.*;
 
 @Controller
 public class PaymentController {
@@ -18,5 +21,10 @@ public class PaymentController {
     @ResponseBody
     public List<Payment> getAll() {
         return paymentService.getAll();
+    }
+
+    @RequestMapping(value = "/payment", method = POST)
+    public void add(@ModelAttribute Payment payment) {
+        paymentService.add(payment);
     }
 }

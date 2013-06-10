@@ -16,4 +16,8 @@ public class PaymentService {
     public List<Payment> getAll() {
         return paymentRepository.getAll();
     }
+
+    public void add(Payment payment) {
+        paymentRepository.add(payment);
+    }
 }
