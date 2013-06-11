@@ -8,9 +8,40 @@ import org.springframework.data.mongodb.core.mapping.Document;
 public class Payment {
 
     @Id private ObjectId id;
-    public String date;
-    public String name;
-    public String checkNumber;
-    public float amount;
+    private String date;
+    private String name;
+    private String checkNumber;
+    private double amount;
 
+    public String getDate() {
+        return date;
+    }
+
+    public void setDate(String date) {
+        this.date = date;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getCheckNumber() {
+        return checkNumber;
+    }
+
+    public void setCheckNumber(String checkNumber) {
+        this.checkNumber = checkNumber;
+    }
+
+    public double getAmount() {
+        return amount;
+    }
+
+    public void setAmount(double amount) {
+        this.amount = amount;
+    }
 }

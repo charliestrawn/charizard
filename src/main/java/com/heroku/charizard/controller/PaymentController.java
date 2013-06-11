@@ -17,13 +17,13 @@ public class PaymentController {
 
     @Autowired PaymentService paymentService;
 
-    @RequestMapping(value = "/payment")
+    @RequestMapping(value = "/payments")
     @ResponseBody
     public List<Payment> getAll() {
         return paymentService.getAll();
     }
 
-    @RequestMapping(value = "/payment", method = POST)
+    @RequestMapping(value = "/payments", method = POST)
     public void add(@ModelAttribute Payment payment) {
         paymentService.add(payment);
     }

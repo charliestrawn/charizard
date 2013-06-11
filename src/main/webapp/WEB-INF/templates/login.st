@@ -18,7 +18,6 @@
             </label>
             <input name="submit" class="btn btn-large btn-primary" type="submit" value="Sign In"/>
         </form>
-
     </div>
 </body>
 </html>

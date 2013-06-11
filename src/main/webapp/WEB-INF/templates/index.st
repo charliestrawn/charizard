@@ -26,7 +26,7 @@
             <div class="row-fluid">
                 <div class="span3">
                     <div class="sidebar-nav">
-                        <form>
+                        <form action="/payments" method="POST">
                             <fieldset>
                                 <legend>Add Payment</legend>
                                 <label>Date</label>
@@ -50,17 +50,15 @@
                             <th>Check #</th>
                             <th>Amount</th>
                         </thead>
-                        <tbody>
-                            <tr>
-                                <td>asfd</td>
-                                <td>asdf</td>
-                                <td>asf</td>
-                                <td>asdf</td>
-                            </tr>
+                        <tbody id="payment-table">
                         </tbody>
                     </table>
                 </div>
             </div>
         </div>
+        <script src="/resources/js/lib/jquery.js"></script>
+        <script src="/resources/js/lib/underscore.js"></script>
+        <script src="/resources/js/lib/backbone.js"></script>
+        <script src="/resources/js/app.js"></script>
     </body>
 </html>
