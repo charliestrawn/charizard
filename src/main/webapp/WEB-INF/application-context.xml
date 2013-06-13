@@ -15,7 +15,7 @@
     <mvc:annotation-driven/>
     <import resource="spring-security.xml"/>
     <import resource="spring-data.xml"/>
-    <mvc:resources mapping="/resources/**" location="/resources/" />
+    <mvc:resources mapping="/**" location="/resources/" />
 
     <bean id="viewResolver" class="org.springframework.web.servlet.view.InternalResourceViewResolver">
         <property name="viewClass" value="com.heroku.charizard.view.StringTemplateView"/>

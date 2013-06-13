@@ -2,9 +2,11 @@
 <html>
     <head>
         <title>Some Web App</title>
-        <link type="text/css" href="/resources/css/bootstrap.css" rel="stylesheet">
-        <link type="text/css" href="/resources/css/login.css" rel="stylesheet">
-        <link type="text/css" href="/resources/css/bootstrap-responsive.css" rel="stylesheet">
+        <link type="text/css" href="/css/bootstrap.css" rel="stylesheet">
+        <link type="text/css" href="/css/login.css" rel="stylesheet">
+        <link type="text/css" href="/css/bootstrap-responsive.css" rel="stylesheet">
+
+        <script data-main="/js/main" src="/js/libs/require/require.js"></script>
     </head>
     <body>
         <div class="navbar navbar-inverse navbar-fixed-top">
@@ -56,9 +58,5 @@
                 </div>
             </div>
         </div>
-        <script src="/resources/js/lib/jquery.js"></script>
-        <script src="/resources/js/lib/underscore.js"></script>
-        <script src="/resources/js/lib/backbone.js"></script>
-        <script src="/resources/js/app.js"></script>
     </body>
 </html>

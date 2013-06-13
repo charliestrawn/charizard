@@ -2,9 +2,9 @@
 <html>
 <head>
     <title>Some Web App</title>
-    <link type="text/css" href="/resources/css/bootstrap.css" rel="stylesheet">
-    <link type="text/css" href="/resources/css/login.css" rel="stylesheet">
-    <link type="text/css" href="/resources/css/bootstrap-responsive.css" rel="stylesheet">
+    <link type="text/css" href="/css/bootstrap.css" rel="stylesheet">
+    <link type="text/css" href="/css/login.css" rel="stylesheet">
+    <link type="text/css" href="/css/bootstrap-responsive.css" rel="stylesheet">
 </head>
 <body>
     <div class="container">
